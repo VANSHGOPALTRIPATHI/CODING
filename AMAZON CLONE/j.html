@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <style>
+      .calculator{
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 200px;
+        margin-top: 50px;
+        border: 5px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+      .buttons{
+        size: 50px;
+        font-size: large;
+        padding: 5px;
+        margin: 10px;
+        size: 100px;
+      }
+      .display{
+        margin-top: 5px;
+        border-width: 10px solid black;
+        background-color: aqua;
+      }
+      .lastbutton{
+        display: flex;
+        justify-content: left;
+        margin-left: 10px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" name="Input" Size="35" id="display">  
+      <div class="buttons">
+        <button>C</button>
+        <button>1</button>
+        <button>2</button>
+        <br/>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <br/>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <br/>
+        <button>9</button>
+        <button>+</button>
+        <button>-</button>
+        <br/>
+
+       <div class="lastbutton">
+        <button>/</button>
+        <button>=</button>
+       </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let value=0;
+    document.querySelector(".display").innerText=` total sum is =${value}...`;
+  </script>
+</html>
